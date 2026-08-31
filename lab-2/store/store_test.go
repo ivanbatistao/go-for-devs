@@ -43,7 +43,7 @@ func TestMemoryStore_GetAndSet(t *testing.T) {
 	}
 }
 
-func TestingMemoryStore_GetMissing(t *testing.T) {
+func TestMemoryStore_GetMissing(t *testing.T) {
 	store := NewMemoryStore()
 
 	got, ok := store.Get("missing")
