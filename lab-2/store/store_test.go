@@ -8,12 +8,13 @@ func TestMemoryStore_GetAndSet(t *testing.T) {
 		key      string
 		value    string
 		expected string
-	}{{
-		name:     "stores a value",
-		key:      "name",
-		value:    "Ivan",
-		expected: "Ivan",
-	},
+	}{
+		{
+			name:     "stores a value",
+			key:      "name",
+			value:    "Ivan",
+			expected: "Ivan",
+		},
 		{
 			name:     "stores an empty vale",
 			key:      "empty",
